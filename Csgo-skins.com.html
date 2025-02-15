@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Page Example</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            position: absolute;
+            animation: movePage 5s infinite alternate;
+        }
+
+        /* Animation to move the whole page */
+        @keyframes movePage {
+            0% {
+                transform: translate(0, 0); /* Start at the top-left corner */
+            }
+            25% {
+                transform: translate(150px, 0); /* Move to the right */
+            }
+            50% {
+                transform: translate(150px, 100px); /* Move down-right */
+            }
+            75% {
+                transform: translate(0, 100px); /* Move down-left */
+            }
+            100% {
+                transform: translate(0, 0); /* Back to the top-left */
+            }
+        }
+
+        .redirect-button {
+            background-color: #f5a623;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #d68917;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My CSGO Skins Site</h1>
+    <p>Click the button below to visit my CS:GO skins site. The whole page moves around!</p>
+
+    <!-- Redirect Button -->
+    <button class="redirect-button" onclick="window.location.href='https://your-site-url.com'">Go to csgo-skins.com</button>
+
+</body>
+</html><ALOASK-SEPARATE-EDITORS>html {
+   background: linear-gradient(to right, dodgerblue 0%, deepskyblue 100%);
+}
+h1{
+   color: white;
+}
+<ALOASK-SEPARATE-EDITORS>console.log('JavaScript Console');
